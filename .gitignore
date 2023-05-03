@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/.vs
+/src/AdminLTE.NET/bin/Debug/net6.0
+/src/AdminLTE.NET/obj
