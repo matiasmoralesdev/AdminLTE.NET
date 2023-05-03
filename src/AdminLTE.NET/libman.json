@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "moment.js@2.29.4",
+      "destination": "wwwroot/lib/moment.js/"
+    },
+    {
+      "library": "bootstrap@5.2.3",
+      "destination": "wwwroot/lib/bootstrap/dist/"
+    },
+    {
+      "library": "jquery@3.6.4",
+      "destination": "wwwroot/lib/jquery/dist/"
+    },
+    {
+      "library": "jquery-validate@1.19.5",
+      "destination": "wwwroot/lib/jquery-validate/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@4.0.0",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "library": "admin-lte@3.2.0",
+      "destination": "wwwroot/lib/admin-lte/"
+    },
+    {
+      "library": "jqvmap@1.5.1",
+      "destination": "wwwroot/lib/jqvmap/"
+    },
+    {
+      "library": "tempusdominus-bootstrap-4@5.39.0",
+      "destination": "wwwroot/lib/tempusdominus-bootstrap-4/"
+    },
+    {
+      "library": "tempus-dominus@6.4.4",
+      "destination": "wwwroot/lib/tempusdominus/"
+    },
+    {
+      "library": "icheck-bootstrap@3.0.1",
+      "destination": "wwwroot/lib/icheck-bootstrap/"
+    },
+    {
+      "library": "bootstrap-daterangepicker@3.0.5",
+      "destination": "wwwroot/lib/bootstrap-daterangepicker/"
+    },
+    {
+      "library": "summernote@0.8.20",
+      "destination": "wwwroot/lib/summernote/"
+    },
+    {
+      "library": "jqueryui@1.13.2",
+      "destination": "wwwroot/lib/jquery-ui/"
+    },
+    {
+      "library": "echarts@5.4.2",
+      "destination": "wwwroot/lib/echarts/"
+    },
+    {
+      "library": "datatables.net@2.1.1",
+      "destination": "wwwroot/lib/datatables/"
+    },
+    {
+      "library": "datatables.net-bs5@1.13.4",
+      "destination": "wwwroot/lib/datatables-bs5/"
+    },
+    {
+      "library": "datatables.net-responsive@2.4.1",
+      "destination": "wwwroot/lib/datatables-responsive/"
+    },
+    {
+      "library": "datatables.net-responsive-bs5@2.4.1",
+      "destination": "wwwroot/lib/datatables-responsive/"
+    },
+    {
+      "library": "datatables.net-buttons@2.3.6",
+      "destination": "wwwroot/lib/datatables-buttons/"
+    },
+    {
+      "library": "datatables.net-buttons-bs5@2.3.6",
+      "destination": "wwwroot/lib/datatables-buttons/"
+    },
+    {
+      "library": "jQuery-Knob@1.2.13",
+      "destination": "wwwroot/lib/jquery-knob/"
+    },
+    {
+      "library": "jszip@3.10.1",
+      "destination": "wwwroot/lib/jszip/"
+    },
+    {
+      "library": "pdfmake@0.2.7",
+      "destination": "wwwroot/lib/pdfmake/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "fontawesome-free@1.0.4",
+      "destination": "wwwroot/lib/fontawesome-free/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "overlayscrollbars@2.1.1",
+      "destination": "wwwroot/lib/overlayscrollbars/"
+    }
+  ]
+}

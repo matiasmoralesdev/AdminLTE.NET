@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["FullScreen_Top"] = true;
+    ViewData["Session_Top"] = true;
+}
+
+<!DOCTYPE html>
+
+<html lang="es-ar">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AdminLTE.NET</title>
+
+    <!-- Estilos de Plugins -->
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="~/lib/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="~/lib/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="~/lib/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="~/lib/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/lib/admin-lte/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/lib/overlayscrollbars/styles/overlayscrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="~/lib/bootstrap-daterangepicker/daterangepicker.min.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="~/lib/summernote/summernote-bs5.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/lib/datatables-bs5/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-responsive/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-buttons/buttons.bootstrap5.min.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AdminLTE.NET.styles.css" asp-append-version="true" />
+
+    @await RenderSectionAsync("Styles", required:false)
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <partial name="_Top" />
+        <partial name="_Menu" />
+
+        <div class="content-wrapper">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+
+        <partial name="_SideBar" />
+        <partial name="_Footer" />
+    </div>
+
+    <!-- Scripts plugins -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+
+    <!-- ECharts -->
+    <script src="~/lib/echarts/echarts.min.js"></script>
+
+    <!-- JQVMap -->
+    <script src="~/lib/jqvmap/jquery.vmap.min.js"></script>
+
+    <!-- daterangepicker -->
+    <script src="~/lib/moment.js/moment-with-locales.min.js"></script>
+    <script src="~/lib/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- jQuery Knob Chart -->
+    <script src="~/lib/jquery-knob/jquery.knob.min.js"></script>
+
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/lib/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Summernote -->
+    <script src="~/lib/summernote/summernote-bs5.min.js"></script>
+
+    <!-- overlayScrollbars -->
+    @*<script src="~/lib/overlayscrollbars/overlayscrollbars.cjs.js"></script>*@
+
+    <!-- DataTables  & Plugins -->
+    <script src="~/lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables-bs5/dataTables.bootstrap5.min.js"></script>
+    <script src="~/lib/datatables-responsive/dataTables.responsive.min.js"></script>
+    <script src="~/lib/datatables-responsive/responsive.bootstrap5.min.js"></script>
+    <script src="~/lib/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/lib/datatables-buttons/buttons.bootstrap5.min.js"></script>
+    <script src="~/lib/jszip/jszip.min.js"></script>
+    <script src="~/lib/pdfmake/pdfmake.min.js"></script>
+    <script src="~/lib/pdfmake/vfs_fonts.min.js"></script>
+    <script src="~/lib/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/lib/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/lib/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="~/lib/admin-lte/js/adminlte.min.js"></script>
+
+    <!-- Scripts propios -->
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/sidebar-fix.js" asp-append-version="true"></script>
+    <script src="~/js/dt-spanish.js" asp-append-version="true"></script>
+
+@*    <script>
+        var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+        $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
+    </script>*@
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿@page
+
+@using System.Text.Json;
+@model AdminLTE.NET.Pages.Administracion.Ejemplo1Model
+@{
+    ViewData["Title"] = "Ejemplo 1";
+    var json = Json.Serialize(Model.Tabla);
+}
+
+<partial name="_PageHeader" view-data="ViewData" />
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table id="table-example" class="table table-bordered table-hover" style="width:100%"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+@section Scripts {
+    <script>
+        const tableData = JSON.parse(`@json`);
+
+        $(() => {
+            initDataTable();
+        });
+
+        function initDataTable() {
+            console.log(tableData);
+
+            $('#table-example').DataTable({
+                data: tableData,
+                responsive:true,
+                columns: [
+                    { data: 'nombre', title: 'Nombre' },
+                    { data: 'apellido', title: 'Apellido' },
+                    { data: 'fecha', title: 'Fecha' },
+                    {
+                        data: null, title: 'Acciones',
+                        render: (data, type, row) => {
+                            return `<button class="btn btn-danger"><i class="fas fa-trash"></i></button>`;
+                        }
+                    }
+                ],
+                language: DTspanish,
+            });
+        }
+    </script>
+}
