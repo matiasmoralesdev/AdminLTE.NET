@@ -116,10 +116,10 @@
     <script src="~/js/sidebar-fix.js" asp-append-version="true"></script>
     <script src="~/js/dt-spanish.js" asp-append-version="true"></script>
 
-@*    <script>
+    <script>
         var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
         $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
-    </script>*@
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
